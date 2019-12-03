@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+#wrap {
+    position: relative;
+}
+
+#acct {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #345678;
+    color: #fff;
+    text-shadow: 1px 1px 3px #ccc;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#acct:hover {
+    text-shadow: 2px 2px 3px #eee;
+    opacity: 0.9;
+}
+
+@media screen and (min-width: 768px) {
+    #wrap {
+        width: 600px;
+        margin: 0 auto;
+    }    
+}

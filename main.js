@@ -5,9 +5,8 @@
 var electron = require( 'electron' ),
     appExpress = require('./app'),
     socket = require('socket.io'),
-    io = socket.listen( server ),
-
     app = electron.app,
+    io = socket.listen( app ),
 
     BrowserWindow = electron.BrowserWindow,
     urlIndex = `file://${__dirname}/call.html`,

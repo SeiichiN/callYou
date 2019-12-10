@@ -5,11 +5,10 @@
 var http = require( 'http'),
     express = require( 'express'),
 
-    app = express(),
-
-    server = http.createServer( app )
+    app = express()
 ;
 
+app.listen( 3000, '127.0.0.1' );
 
 app.use( express.static( __dirname + '/' ));
 
@@ -17,8 +16,5 @@ app.get( '/', function ( req, res ) {
     res.redirect( 'index.html' );
 });
 
-server.listen( 3000 );
-console.log(
-    'Server listening on port %d.',
-    server.address().port
-);
+
+module.exports = app;

@@ -31,6 +31,6 @@ app.on( 'ready', function () {
 io.of('/')
   .on('connection', function ( socket ) {
     socket.on( 'call', function ( msg ) {
-      mainWin.loadURL( urlIndex );
+      mainWindow.loadURL( urlIndex );
       });
   });

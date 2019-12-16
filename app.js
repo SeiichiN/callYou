@@ -1,4 +1,5 @@
 // app.js
+// https://github.com/zacanger/alert-node#readme
 
 'use strict';
 
@@ -8,7 +9,9 @@ var http = require( 'http'),
 
     app = express(),
     server = http.createServer( app ),
-    io = socket.listen( server )
+    io = socket.listen( server ),
+
+    window = new Window()
 ;
 
 
@@ -23,6 +26,7 @@ io.of('/')
     socket.on( 'call', function ( msg ) {
         console.log('get call!');
         console.log( msg );
+        alert( msg );
     })
 })
 

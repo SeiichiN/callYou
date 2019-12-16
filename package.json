@@ -1,23 +1,28 @@
 {
-  "name": "callyou",
-  "version": "1.0.0",
-  "description": "Call you on click",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SeiichiN/callYou.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SeiichiN/callYou/issues"
-  },
-  "homepage": "https://github.com/SeiichiN/callYou#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "socket.io": "^2.3.0"
-  }
+    "name": "callyou",
+    "version": "1.0.0",
+    "description": "Call you on click",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SeiichiN/callYou.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/SeiichiN/callYou/issues"
+    },
+    "homepage": "https://github.com/SeiichiN/callYou#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "socket.io": "^2.3.0"
+    },
+    "devDependencies": {
+        "electron": "^7.1.5",
+        "node-static": "^0.7.11"
+    }
 }

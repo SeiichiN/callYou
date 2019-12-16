@@ -5,10 +5,14 @@
 var http = require( 'http'),
     express = require( 'express'),
     socket = require('socket.io'),
+    jsdom = require('jsdom'),
+    Window = require('window'),
 
     app = express(),
     server = http.createServer( app ),
-    io = socket.listen( server )
+    io = socket.listen( server ),
+
+    window = new Window()
 ;
 
 
@@ -23,6 +27,7 @@ io.of('/')
     socket.on( 'call', function ( msg ) {
         console.log('get call!');
         console.log( msg );
+        window.alert(msg);
     })
 })
 

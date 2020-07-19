@@ -22,7 +22,7 @@
         "socket.io": "^2.3.0"
     },
     "devDependencies": {
-        "electron": "^7.1.5",
+        "electron": "^7.2.4",
         "node-static": "^0.7.11"
     }
 }

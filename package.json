@@ -4,8 +4,8 @@
   "description": "Call you on click",
   "main": "main.js",
   "scripts": {
-      "start": "node ./bin/www",
-      "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/SeiichiN/callYou#readme",
   "dependencies": {
-    "electron": "^7.2.4",
+    "electron": "^7.3.3",
     "express": "^4.17.1",
     "socket.io": "^2.3.0"
   }
